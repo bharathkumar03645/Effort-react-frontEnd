@@ -8,7 +8,7 @@ const HRLayout = () => {
   const cognizantBlue = '#000048';
   const cognizantLightGray = '#F8F9FA';
   const navLinkActiveBg = '#1a1a80';
-  const logoutButtonColor = '#0062A0'; 
+  const logoutButtonColor = '#0062A0';
 
   const handleLogout = () => {
     console.log('HR logged out');
