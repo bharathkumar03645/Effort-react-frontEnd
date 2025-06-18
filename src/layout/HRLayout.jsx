@@ -20,11 +20,16 @@ const HRLayout = () => {
           <li className="nav-item mb-2">
             <NavLink to="/hr/add-trainer" className="nav-link text-white">Add New Trainer</NavLink>
           </li>
+
           <li className="nav-item mb-2">
             <NavLink to="/hr/add-cohort" className="nav-link text-white">Add New Cohort</NavLink>
           </li>
           <li className="nav-item mb-2">
             <NavLink to="/hr/allocate-trainer" className="nav-link text-white">Allocate Trainer</NavLink>
+          </li>
+          <li className="nav-item mb-2">
+             <NavLink to="/hr/approvals"  className="nav-link text-white  py-2 px-3 rounded">Approvals</NavLink>
+
           </li>
           <li className="nav-item mb-2">
             <NavLink to="/hr/search" className="nav-link text-white">Search</NavLink>

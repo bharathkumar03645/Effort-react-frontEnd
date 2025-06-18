@@ -384,6 +384,13 @@ const TrainerLayout = () => {
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
+                <NavLink to="/trainer/notification"  style={({ isActive }) => ({
+                    backgroundColor: isActive ? navLinkActiveBg : 'transparent',
+                    transition: 'background-color 0.3s ease',
+                  })} className="nav-link text-white  py-2 px-3 rounded">Notifications</NavLink>
+
+              </li>
+              <li className="nav-item mb-2">
                 <NavLink
                   to="/trainer/log-effort"
                   className="nav-link text-white py-2 px-3 rounded"

@@ -193,13 +193,7 @@ const Login = () => {
   const cognizantBlue = '#0073B9'; // A common Cognizant blue shade
   const cognizantLightBlue = '#EAF4FA'; // A very light blue for backgrounds if needed, or stick to light gray
 
-  const handleForgotpassword = async (e) => {
-    e.preventDefault();
-    console.log("logged")
-    navigate(<ResetPassword/>)
-  
-   
-  };
+ 
   
 
 
@@ -297,7 +291,7 @@ const Login = () => {
               </label>
             </div>
             {/* Applying Cognizant blue to the Forgot Password link */}
-            <a href="" onClick={handleForgotpassword} className="text-decoration-none small" style={{ color: cognizantBlue }}>
+            <a href="/forgotpassword"  className="text-decoration-none small" style={{ color: cognizantBlue }}>
               Forgot Password?
             </a>
           </div>
@@ -310,7 +304,7 @@ const Login = () => {
 
         <div className="text-center mt-3">
           <small>
-            Don't have an account? <a href="#" className="text-decoration-none" style={{ color: cognizantBlue }}>Sign Up</a>
+            Don't have an account? <a href="/signup" className="text-decoration-none" style={{ color: cognizantBlue }}>Sign Up</a>
           </small>
         </div>
       </div>

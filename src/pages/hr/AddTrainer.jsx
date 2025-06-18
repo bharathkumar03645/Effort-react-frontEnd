@@ -59,7 +59,7 @@ const AddTrainer = () => {
         skills: form.skills,
       };
  
-      const response = await fetch('http://localhost:8081/registerTrainer', {
+      const response = await fetch('http://localhost:8081/addTrainer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

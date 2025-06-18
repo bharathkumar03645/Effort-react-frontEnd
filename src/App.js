@@ -20,6 +20,11 @@ import DownloadData from './pages/hr/DownloadData'
 import Settings from './pages/hr/Settings'
 import { createContext, useState } from 'react'
 import ResetPassword from './pages/trainer/ResetPassword'
+import Signup from './pages/SignUp'
+import ForgotPassword from './pages/ForgotPassword'
+import Approvals from './pages/hr/Approvals'
+import Notification from './pages/trainer/Notification'
+
 
 
 export const Usercontext = createContext();
@@ -34,7 +39,12 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
+       
+
          <Route path="/hr/*" element={<HRLayout />}>
+         <Route path="approvals" element={<Approvals />} />
           <Route path="dashboard" element={<HRDashboard />} />
           <Route path="add-trainer" element={<AddTrainer />} />
           <Route path="add-cohort" element={<AddCohort />} />
@@ -48,6 +58,8 @@ function App() {
         </Route>
          <Route path="/trainer/*" element={<TrainerLayout />}>
             <Route path="dashboard" element={<TrainerDashboard />} />
+            <Route path="notification" element={<Notification />} />
+
             <Route path="log-effort" element={<LogEffort />} />
             <Route path="update-info" element={<UpdateInfo />} />
             <Route path="raise-query" element={<RaiseQuery />} />

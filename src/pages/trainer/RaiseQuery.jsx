@@ -36,7 +36,7 @@ const RaiseQuery = () => {
     .then(res=>res.text())
     .then(data=>{
       console.log(data);
-      alert("You had raise query successfully")
+      alert(data)
     })
 
 

@@ -51,7 +51,7 @@ const LogEffort = () => {
     .then(res=>res.text())
     .then(data=>{
       console.log(data);
-      alert("Trainer Info has updated successfully")
+      alert(data)
     })
 
     
